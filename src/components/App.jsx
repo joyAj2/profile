@@ -6,12 +6,11 @@ import Portfolio from "./Portfolio";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/profile">
       <Routes>
-        <Route path="/" exact element={<Start />} />
-        <Route path="/work" exact element={<Work />} />
-        <Route path="/Portfolio" exact element={<Portfolio />} />
-        {/* Add more routes for other pages here */}
+        <Route path="/" element={<Start />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </Router>
   );
